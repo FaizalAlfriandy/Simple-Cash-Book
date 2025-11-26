@@ -24,15 +24,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- FILTER CHIPS (Semua / Harian / Mingguan / Bulanan / Tahunan) -->
+    <!-- FILTER CHIPS -->
     <HorizontalScrollView
         android:id="@+id/tabFilterScroll"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@android:color/transparent"
         android:padding="8dp"
         android:fillViewport="true"
-        app:layout_constraintTop_toBottomOf="@+id/topAppBar"
+        app:layout_constraintTop_toBottomOf="@id/topAppBar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
@@ -44,28 +43,39 @@
             <com.google.android.material.chip.Chip
                 android:id="@+id/chipSemua"
                 style="@style/Widget.MaterialComponents.Chip.Choice"
-                android:text="Semua"
-                android:checked="true"/>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Semua"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chipHarian"
                 style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="Harian"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chipMingguan"
                 style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="Mingguan"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chipBulanan"
                 style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="Bulanan"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chipTahunan"
                 style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="Tahunan"/>
+
         </LinearLayout>
     </HorizontalScrollView>
 
@@ -80,7 +90,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- BAGIAN BAWAH: 2 TOMBOL + TOTAL -->
+    <!-- BAGIAN BAWAH -->
     <LinearLayout
         android:id="@+id/bottomLayout"
         android:layout_width="0dp"
@@ -93,7 +103,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <!-- Tombol -->
+        <!-- TOMBOL -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -161,6 +171,7 @@
                 android:textStyle="bold"
                 android:gravity="center"/>
         </LinearLayout>
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

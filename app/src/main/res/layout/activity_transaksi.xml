@@ -75,7 +75,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="number"
-                    android:hint="Kamu Membayar"/>
+                    android:hint="Nominal"/>
             </com.google.android.material.textfield.TextInputLayout>
 
             <!-- Catatan -->
@@ -124,7 +124,9 @@
         android:layout_margin="8dp"
         android:gravity="center"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/cardInput"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
 
         <Button
             android:id="@+id/btnSimpanKeluar"
